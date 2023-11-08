@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio Website" />
+    <meta name="author" content="Renz Joshua Romano" />
+    <meta
+      name="keywords"
+      content="Aditya Singh, Renz Joshua Romano, Renz Joshua Romano DPS,
+        Renz Joshua Romano DPSRKP, Renz Joshua Romano UMass, Aditya Vikram
+        Singh UMass Amherst, Renz Joshua Romano New Delhi, Aditya Vikram
+        Singh Amherst, Renz Joshua Romano ISSDC, Renz Joshua Romano NASA,
+        Renz Joshua Romano, Renz Joshua Romano Website, Aditya V Singh"
+    />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <title>RenzjoshuaRomano</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <script>
+      function redirectToLoader() {
+          window.location.href = 'index.html';
+      }
+      if (performance.navigation.type === 1) {
+          redirectToLoader();
+      }
+  </script>
+    <style>
+      .gap-3 {
+        gap: 1rem!important;
+    }
+    .px-2 {
+      padding-right: 3.5rem!important;
+      padding-left: 3.5rem!important;
+    }
+      .header-icons .icon {
+        height: 45px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        transition: all .7s;
+        width: 45px;
+        font-size: 20px;
+        margin: 5px
+    }
+    .btn2 {
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #fefefe;
+      text-transform: uppercase;
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+    
+    .btn2::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - -2px);
+      background-color: #000000;
+      transition: 0.3s ease-out;
+      transform: scaleY(1);
+    }
+    
+    .btn2::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 50px);
+      background-color: #ffffff;
+      transition: 0.3s ease-out;
+      transform: scaleY(1);
+    }
+    
+    .btn2:hover::before {
+      transform: translateY(-25px);
+      height: 0;
+    }
+    
+    .btn2:hover::after {
+      transform: scaleX(0);
+      transition-delay: 0.15s;
+    }
+    
+    .btn2:hover {
+      border: 2px solid #212121;
+    }
+    
+    .btn2 span {
+      position: relative;
+      z-index: 3;
+    }
+    
+    button {
+      text-decoration: none;
+      border: none;
+      background-color: transparent;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title">RENZ JOSHUA ROMANO</span>
+          <span class="site-description">Front-End Developer • Web Developer • Graphic Designer</span>
+        </h1>
+        <div class="header-icons">
+          <a aria-label="My Facebook Profile" target="_blank" href="https://www.facebook.com/renzjoshua.romano.31?mibextid=ZbWKwL">
+            <i class="icon fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Github Profile" target="_blank" href="https://github.com/Rennzyys">
+            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Résumé" target="_blank" href="./assets/img/RESUME-ROMANO-RENZJOHSUA (1).pdf">
+            <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+          <a aria-label="Send Email" href="mailto:renzjoshuaromano24@gmail.com" target="_blank"
+            ><i class="icon fa fa-envelope"></i
+          ></a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <!-- User Introduction-->
+      <div class="user-details">
+        <h1>My Story</h1>
+        <p style="text-align: center">
+          Creative | Visionary | Entrepreneurial
+         </p>
+        <picture>
+          <img
+            src="./assets/img/Profile2.png"
+            alt="Professional Me"
+            width="40%"
+            style="border-radius: 100%"
+          />
+        </picture>
+        <p>
+          I am a student under BSIT program in Web Development Major at the University of Phinma Araullo,
+          My interest in Computer Programming started back in 2019 when I decide to check the elements
+          on the browser —turns out that all the Elements I see on the browser was HTML and CSS!. Today,
+          I'm a fourth-year college student eager to begin my internship as a front-end developer. <br> <br>
+        </p>
+      </div>
+
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #1: Languages -->
+        <div class="tech">
+          <h2>Skills</h2>
+          <p style="text-align: center">
+            Technologies
+           </p>
+           <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-mysql-plain"></i>
+          <i class="devicon-laravel-plain colored"></i>
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-cplusplus-plain colored"></i>
+          <i class="devicon-java-plain-wordmark colored"></i>
+        </div>
+
+        <!-- Technology Stack #4: Tools -->
+        <div class="tech">
+          <h2>Tools</h2>
+          <p style="text-align: center">
+            Development tools
+           </p>
+          <i class="devicon-visualstudio-plain colored"></i>
+          <i class="devicon-github-original colored"></i>
+          <i class="devicon-git-plain colored"></i>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="container" style="align-items: center">
+            <!-- Images Filter Buttons Section -->
+            <h2>Certificates</h2>
+            <div class="row mt-5" id="filter-buttons">
+              <div class="col-12">
+                <button class="btn mb-2 me-1 active" data-filter="all">Show all</button>
+                <button class="btn mb-2 mx-1" data-filter="oracle">Oracle</button>
+                <button class="btn mb-2 mx-1" data-filter="others">Others</button>
+              </div>
+            </div>
+
+            <!-- Filterable Images / Cards Section -->
+            <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+              <div class="card p-0" data-name="oracle">
+                <img src="./assets/img/jpg/JavaCertificate.jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">JAVA FOUNDATION</h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="oracle">
+                <img src="./assets/img/jpg/JavaFoundationsCertificate.jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">FINAL EXAM COMPLETION</h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="others">
+                <img src="./assets/img/photo1699279332 (3).jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">GAME DEVELOPMENT</h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="others">
+                <img src="./assets/img/photo1699279332 (1).jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">VIRTUAL ASSISTANT</h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="others">
+                <img src="./assets/img/photo1699279332 (2).jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">DIGITAL FILM MAKING</h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="others">
+                <img src="./assets/img/photo1699279332 (4).jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">SWIFT PLAYGROUND</h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="others">
+                <img src="./assets/img/photo1699279332 (4).jpeg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">EMERGING TRENDS IN AI </h6>
+                </div>
+              </div>
+              <div class="card p-0" data-name="others">
+                <img src="./assets/img/pinningcertificate.jpg" alt="img">
+                <div class="card-body">
+                  <h6 class="card-title">Pinning Certificate</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            const filterButtons = document.querySelectorAll("#filter-buttons button");
+            const filterableCards = document.querySelectorAll("#filterable-cards .card");
+
+            const filterCards = (e) => {
+                document.querySelector("#filter-buttons .active").classList.remove("active");
+                e.target.classList.add("active");
+
+                filterableCards.forEach(card => {
+                    if (card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+                        card.classList.remove("hide");
+                    } else {
+                        card.classList.add("hide");
+                    }
+                });
+            };
+            filterButtons.forEach(button => button.addEventListener("click", filterCards));
+        </script>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="user-details">
+        <h1>Projects</h1>
+      </div>
+      <!-- User Project #1: Personal Résumé Website -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/jpg/homepageregistrar.png" alt="Personal Website" />
+            <img alt="Personal Website" src="./assets/img/jpg/Registrar.jpeg" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>Registrar Management System</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
+              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+              />
+            &nbsp;
+            <img
+              height="32"
+              width="32"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
+              style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
+            />
+            &nbsp;
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          </div>
+          <p style="text-align: justify">
+            Registrar Management System is a system where the students can request documents either onsite or online.
+            Inquire and request documents such as Transcript of Record, Diploma, Form 137, Authentication, Certificate
+            of Authentication and Verification
+          </p>
+          <a class="project-link" target="_blank" href="https://drive.google.com/drive/folders/1priD4ZbbiU_8s2YVfqj5Qz4wbUcWCkXJ?usp=sharing&fbclid=IwAR1uymxlCFBuy_jeB7KG7L9wzxbkIBC-D40Znrah_Y8elQ6w09sH2ZDqAxk">Check it out!</a>
+        </div>
+      </div>
+
+
+      <!-- <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/img/webp/Valuto-Account-Management.webp"
+              alt="Valuto: Account Management System"
+            />
+            <img alt="Valuto: Account Management System" src="./assets/img/jpg/Valuto-Account-Management.jpg" />
+          </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Valuto: Account Management System</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg"
+              style="filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
+            />
+          </div>
+          <p style="text-align: justify">
+            I developed a CLI system for accounting management and financial statement maintenance. The purpose of the
+            system is to maintain a record of the funds received, used, disseminated and donated by an organization.
+            Details of transactions and maintenance of a budget and tallying of current balance/inventory in cash/kind
+            is incorporated in this system.
+          </p>
+          <a class="project-link" target="_blank" href="#">
+            Check it out!
+          </a>
+        </div>
+      </div> -->
+
+
+      <!-- User Project #3: COVID-19 Tracker App -->
+      <!-- <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="#" alt="COVID-19 Tracker App" />
+            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/COVID19-Tracker-App.jpg" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>COVID-19 Tracker App</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
+              style="filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
+            />
+          </div>
+          <p style="text-align: justify">
+            I created a web application for tracking the spread of COVID-19. Using Johns Hopkins University Center For
+            Systems Science and Engineering API, the website processes the COVID-19 data to create statistical
+            projections through graphs and charts.
+          </p>
+          <a class="project-link" target="_blank" href="#">
+            Check it out!
+          </a>
+        </div>
+      </div> -->
+    </section>
+
+
+    <section id="about">
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #1: Languages -->
+        <div class="tech">
+          <h2>PINNING</h2>
+          <p style="text-align: center">
+            10th Hard Hot and Pinning Ceremony
+           </p>
+          <div class="user-projects">
+            <div class="images-Center">
+              <picture>
+                <source type="image/webp" srcset="./assets/img/pinningceremony.jpeg" alt="Pinning Ceremony" />
+                <img alt="Pinning Ceremony" src="./assets/img/pinningceremony.jpeg" />
+              </picture>
+            </div>
+          </div>
+          <h2>Let's Talk</h2>
+          <button>
+            <a href="mailto:renzjoshuaromano24@gmail.com" target="_blank" class="btn2"><span class="spn2">HELLO !</span></a>
+          </button>
+        </div>
+      </div>
+      </section>
+    <footer class="footer">
+      <p>&copy; Copyright @ 2023 Renz Joshua Romano</p>
+    </footer>
+
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
